@@ -1,0 +1,7 @@
+.idea
+venv/bin/*
+venv/lib/*
+venv/lib64/*
+venv/include/*
+venv/main/out/*
+venv/main/uploads/*
