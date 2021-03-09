@@ -10,15 +10,8 @@ import nltk
 import pprint
 import secrets
 import pyconll as pc
-
 import torch
-torch.cuda.empty_cache()
-
-torch.cuda.memory_summary(device=None, abbreviated=False)
-
 import gc
-# del torch
-gc.collect()
 
 # model = EasyNMT('m2m_100_1.2B')
 model = EasyNMT('opus-mt')
@@ -123,6 +116,11 @@ def main():
         new_dir_sents_es = UPLOAD_FOLDER + '/out/es/'
         os.makedirs(new_dir_sents_en)
         os.makedirs(new_dir_sents_es)
+
+        torch.cuda.empty_cache()
+        torch.cuda.memory_summary(device=None, abbreviated=False)
+        # del torch
+        gc.collect()
 
         for file in files:
             # if user does not select file, browser also
