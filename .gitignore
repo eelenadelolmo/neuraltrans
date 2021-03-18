@@ -5,3 +5,4 @@ venv/lib64/*
 venv/include/*
 venv/main/out/*
 venv/main/uploads/*
+venv/main/templates/*
