@@ -1,8 +1,8 @@
 .idea
 venv/bin/*
 venv/lib/*
-venv/lib64/*
+venv/lib64
+venv/main/pyvenv.cfg
 venv/include/*
 venv/main/out/*
 venv/main/uploads/*
-venv/main/templates/*
