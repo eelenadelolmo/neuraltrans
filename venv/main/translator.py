@@ -4,16 +4,18 @@ import os
 import re
 from werkzeug.utils import secure_filename
 from flask import Flask, flash, request, redirect, send_file, render_template, url_for
-from nltk.tokenize import word_tokenize
 from easynmt import EasyNMT
 import nltk
-import pprint
 import secrets
 import pyconll as pc
 import torch
 import gc
 
 # model = EasyNMT('m2m_100_1.2B')
+
+# Using CPU instead of GPU
+# device = torch.device("cpu")
+
 model = EasyNMT('opus-mt')
 nltk.download('punkt')
 
@@ -117,6 +119,7 @@ def main():
         os.makedirs(new_dir_sents_en)
         os.makedirs(new_dir_sents_es)
 
+        # Using GPU instead of CPU
         torch.cuda.empty_cache()
         torch.cuda.memory_summary(device=None, abbreviated=False)
         # del torch
