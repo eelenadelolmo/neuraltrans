@@ -26,4 +26,4 @@ ____
  
 This project is a part of a PhD thesis carried out at the Department of Linguistics of the Complutense University of Madrid (https://www.ucm.es/linguistica/grado-linguistica) and is supported by the ILSA (Language-Driven Software and Applications) research group (http://ilsa.fdi.ucm.es/).
 
-The module will be publicly accessible for Spanish annotation from http://repositorios.fdi.ucm.es:5000/upload-grew-ann
+The module will be publicly accessible for Spanish annotation from http://repositorios.fdi.ucm.es:5001/
