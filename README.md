@@ -1,4 +1,4 @@
-# Naural-based ES-EN translation
+# Neural-based ES-EN translation
 
 
 ### Installation
