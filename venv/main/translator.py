@@ -14,7 +14,7 @@ import gc
 # model = EasyNMT('m2m_100_1.2B')
 
 # Using CPU instead of GPU
-# device = torch.device("cpu")
+device = torch.device("cpu")
 
 model = EasyNMT('opus-mt')
 nltk.download('punkt')
@@ -120,10 +120,10 @@ def main():
         os.makedirs(new_dir_sents_es)
 
         # Using GPU instead of CPU
-        torch.cuda.empty_cache()
-        torch.cuda.memory_summary(device=None, abbreviated=False)
-        # del torch
-        gc.collect()
+        # torch.cuda.empty_cache()
+        # torch.cuda.init()
+        # torch.cuda.memory_summary(device=None, abbreviated=False)
+        # gc.collect()
 
         for file in files:
             # if user does not select file, browser also
